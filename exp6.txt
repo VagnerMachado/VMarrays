@@ -1,0 +1,151 @@
+0: goto 150
+1: iconst 0
+2: istore 6
+3: iload 6
+4: iload 1
+5: icmpge 67
+6: iconst 0
+7: istore 7
+8: iload 7
+9: iload 2
+10: icmpge 62
+11: iconst 0
+12: istore 8
+13: iload 8
+14: iload 3
+15: icmpge 57
+16: iconst 0
+17: istore 9
+18: iload 9
+19: iload 4
+20: icmpge 52
+21: iconst 0
+22: istore 10
+23: iload 10
+24: iload 5
+25: icmpge 47
+26: aload 0
+27: iload 6
+28: iload 7
+29: iload 8
+30: iload 9
+31: iload 10
+32: iload 6
+33: iload 7
+34: iadd
+35: iload 8
+36: iadd
+37: iload 9
+38: iadd
+39: iload 10
+40: iadd
+41: iastore 5
+42: iload 10
+43: iconst 1
+44: iadd
+45: istore 10
+46: goto 23
+47: iload 9
+48: iconst 1
+49: iadd
+50: istore 9
+51: goto 18
+52: iload 8
+53: iconst 1
+54: iadd
+55: istore 8
+56: goto 13
+57: iload 7
+58: iconst 1
+59: iadd
+60: istore 7
+61: goto 8
+62: iload 6
+63: iconst 1
+64: iadd
+65: istore 6
+66: goto 3
+67: return
+68: iconst 0
+69: istore 6
+70: iload 6
+71: iload 1
+72: icmpge 127
+73: iconst 0
+74: istore 7
+75: iload 7
+76: iload 2
+77: icmpge 122
+78: iconst 0
+79: istore 8
+80: iload 8
+81: iload 3
+82: icmpge 117
+83: iconst 0
+84: istore 9
+85: iload 9
+86: iload 4
+87: icmpge 112
+88: iconst 0
+89: istore 10
+90: iload 10
+91: iload 5
+92: icmpge 107
+93: aload 0
+94: iload 6
+95: iload 7
+96: iload 8
+97: iload 9
+98: iload 10
+99: iaload 5
+100: astore 11
+101: print 11
+102: iload 10
+103: iconst 1
+104: iadd
+105: istore 10
+106: goto 90
+107: iload 9
+108: iconst 1
+109: iadd
+110: istore 9
+111: goto 85
+112: iload 8
+113: iconst 1
+114: iadd
+115: istore 8
+116: goto 80
+117: iload 7
+118: iconst 1
+119: iadd
+120: istore 7
+121: goto 75
+122: iload 6
+123: iconst 1
+124: iadd
+125: istore 6
+126: goto 70
+127: return
+128: iconst 3
+129: iconst 3
+130: iconst 3
+131: iconst 3
+132: iconst 3
+133: newIntArray 5
+134: astore 0
+135: aload 0
+136: iconst 3
+137: iconst 3
+138: iconst 3
+139: iconst 3
+140: iconst 3
+141: invoke 1, 6, 11
+142: aload 0
+143: iconst 3
+144: iconst 3
+145: iconst 3
+146: iconst 3
+147: iconst 3
+148: invoke 68, 6, 12
+149: return
+150: invoke 128, 0, 1

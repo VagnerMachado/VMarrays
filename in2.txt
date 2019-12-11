@@ -1,0 +1,156 @@
+	goto 19
+1:
+	iconst 0
+	istore 3
+2:	iload 3
+	iload 1
+	icmpge 5
+	iconst 0
+	istore 4
+3:	iload 4
+	iload 2
+	icmpge 4
+	aload 0
+	iload 3
+	iload 4
+	iload 3
+	iload 4
+	iadd
+	intToFloat
+	fastore 2
+	iload 4
+	iconst 1
+	iadd
+	istore 4
+	goto 3
+4:	iload 3
+	iconst 1
+	iadd
+	istore 3
+	goto 2
+5:      return
+6:
+	iconst 0
+	istore 3
+7:	iload 3
+	iload 1
+	icmpge 10
+	iconst 0
+	istore 4
+8:	iload 4
+	iload 2
+	icmpge 9
+	aload 0
+	iload 3
+	iload 4
+	faload 2
+	fstore 5
+	print 5
+	iload 4
+	iconst 1
+	iadd
+	istore 4
+	goto 8
+9:	iload 3
+	iconst 1
+	iadd
+	istore 3
+	goto 7
+10:	return
+11:
+	iload 2
+	iload 3
+	newFloatArray 2
+	astore 5
+	iconst 0
+	istore 6
+12:	iload 6
+	iload 2
+	icmpge 17
+	iconst 0
+	istore 7
+13:	iload 7
+	iload 3
+	icmpge 16
+	aload 5
+	iload 6
+	iload 7
+	fconst 0.0
+	fastore 2
+	iconst 0
+	istore 8
+14:	iload 8
+	iload 4
+	icmpge 15
+	aload 5
+	iload 6
+	iload 7
+	aload 5
+	iload 6
+	iload 7
+	faload 2
+	aload 0
+	iload 6
+	iload 8
+	faload 2
+	aload 1
+	iload 8
+	iload 7
+	faload 2
+	fmul
+	fadd
+	fastore 2
+	iload 8
+	iconst 1
+	iadd
+	istore 8
+	goto 14
+15:	iload 7
+	iconst 1
+	iadd
+	istore 7
+	goto 13
+16:	iload 6
+	iconst 1
+	iadd
+	istore 6
+	goto 12
+17:	aload 5
+	areturn
+18:
+	iconst 3
+	istore 0
+	iconst 4
+	istore 1
+	iconst 5
+	istore 2
+	iload 0
+	iload 1
+	newFloatArray 2
+	astore 3
+	iload 1
+	iload 2
+	newFloatArray 2
+	astore 4
+	aload 3
+	iload 0
+	iload 1
+	invoke 1, 3, 5
+	aload 4
+	iload 1
+	iload 2
+	invoke 1, 3, 5
+	aload 3
+	aload 4
+	iload 0
+	iload 2
+	iload 1
+	invoke 11, 5, 4
+	astore 5
+	aload 5
+	iload 0
+	iload 2
+	invoke 6, 3, 6
+	return
+19:
+	invoke 18, 0, 6

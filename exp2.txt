@@ -1,0 +1,151 @@
+0: goto 150
+1: iconst 0
+2: istore 3
+3: iload 3
+4: iload 1
+5: icmpge 29
+6: iconst 0
+7: istore 4
+8: iload 4
+9: iload 2
+10: icmpge 24
+11: aload 0
+12: iload 3
+13: iload 4
+14: iload 3
+15: iload 4
+16: iadd
+17: intToFloat
+18: fastore 2
+19: iload 4
+20: iconst 1
+21: iadd
+22: istore 4
+23: goto 8
+24: iload 3
+25: iconst 1
+26: iadd
+27: istore 3
+28: goto 3
+29: return
+30: iconst 0
+31: istore 3
+32: iload 3
+33: iload 1
+34: icmpge 56
+35: iconst 0
+36: istore 4
+37: iload 4
+38: iload 2
+39: icmpge 51
+40: aload 0
+41: iload 3
+42: iload 4
+43: faload 2
+44: fstore 5
+45: print 5
+46: iload 4
+47: iconst 1
+48: iadd
+49: istore 4
+50: goto 37
+51: iload 3
+52: iconst 1
+53: iadd
+54: istore 3
+55: goto 32
+56: return
+57: iload 2
+58: iload 3
+59: newFloatArray 2
+60: astore 5
+61: iconst 0
+62: istore 6
+63: iload 6
+64: iload 2
+65: icmpge 114
+66: iconst 0
+67: istore 7
+68: iload 7
+69: iload 3
+70: icmpge 109
+71: aload 5
+72: iload 6
+73: iload 7
+74: fconst 0.0
+75: fastore 2
+76: iconst 0
+77: istore 8
+78: iload 8
+79: iload 4
+80: icmpge 104
+81: aload 5
+82: iload 6
+83: iload 7
+84: aload 5
+85: iload 6
+86: iload 7
+87: faload 2
+88: aload 0
+89: iload 6
+90: iload 8
+91: faload 2
+92: aload 1
+93: iload 8
+94: iload 7
+95: faload 2
+96: fmul
+97: fadd
+98: fastore 2
+99: iload 8
+100: iconst 1
+101: iadd
+102: istore 8
+103: goto 78
+104: iload 7
+105: iconst 1
+106: iadd
+107: istore 7
+108: goto 68
+109: iload 6
+110: iconst 1
+111: iadd
+112: istore 6
+113: goto 63
+114: aload 5
+115: areturn
+116: iconst 3
+117: istore 0
+118: iconst 4
+119: istore 1
+120: iconst 5
+121: istore 2
+122: iload 0
+123: iload 1
+124: newFloatArray 2
+125: astore 3
+126: iload 1
+127: iload 2
+128: newFloatArray 2
+129: astore 4
+130: aload 3
+131: iload 0
+132: iload 1
+133: invoke 1, 3, 5
+134: aload 4
+135: iload 1
+136: iload 2
+137: invoke 1, 3, 5
+138: aload 3
+139: aload 4
+140: iload 0
+141: iload 2
+142: iload 1
+143: invoke 57, 5, 4
+144: astore 5
+145: aload 5
+146: iload 0
+147: iload 2
+148: invoke 30, 3, 6
+149: return
+150: invoke 116, 0, 6

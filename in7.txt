@@ -1,0 +1,86 @@
+	goto 15
+1:
+	iconst 2
+	iconst 3
+	iconst 4
+	newIntArray 3
+	astore 0
+2:
+	aload 0
+	iconst 0
+	iconst 0
+	iconst 0
+	iconst 10
+	iastore 3
+3:
+	print 0
+4:
+	aload 0
+	iconst 0
+	iconst 0
+	iconst 0
+	iaload 3
+	istore 1
+5:
+	print 1
+6:
+	aload 0
+	iconst 0
+	iconst 0
+	iconst 1
+	iconst 20
+	iastore 3
+7:
+	aload 0
+	iconst 0
+	iconst 1
+	iconst 0
+	aload 0
+	iconst 0
+	iconst 0
+	iconst 0
+	iaload 3
+	aload 0
+	iconst 0
+	iconst 0
+	iconst 1
+	iaload 3
+	iadd
+	iastore 3
+8:
+	aload 0
+	iconst 0
+	iconst 1
+	iconst 0
+	iaload 3
+	istore 1
+9:
+	print 1
+10:
+	iconst 5
+	iconst 6
+	iconst -7
+	newFloatArray 3
+	astore 2
+11:
+	print 2
+12:
+	aload 2
+	iconst 4
+	iconst 5
+	iconst 6
+	fconst 12.09e+4
+	fastore 3
+13:
+	aload 2
+	iconst 4
+	iconst 5
+	iconst 6
+	faload 3
+	fstore 3
+14:
+	print 3
+
+	return
+15:
+	invoke 1, 0, 4

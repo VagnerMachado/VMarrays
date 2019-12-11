@@ -1,0 +1,155 @@
+0: goto 154
+1: iload 1
+2: iload 2
+3: icmpge 21
+4: aload 0
+5: iload 1
+6: iload 2
+7: invoke 22, 3, 7
+8: istore 3
+9: aload 0
+10: iload 1
+11: iload 3
+12: iconst 1
+13: isub
+14: invoke 1, 3, 4
+15: aload 0
+16: iload 3
+17: iconst 1
+18: iadd
+19: iload 2
+20: invoke 1, 3, 4
+21: return
+22: aload 0
+23: iload 2
+24: iaload 1
+25: istore 3
+26: iload 1
+27: iconst 1
+28: isub
+29: istore 4
+30: iload 1
+31: istore 5
+32: iload 5
+33: iload 2
+34: iconst 1
+35: isub
+36: icmpgt 65
+37: aload 0
+38: iload 5
+39: iaload 1
+40: iload 3
+41: icmpgt 60
+42: iload 4
+43: iconst 1
+44: iadd
+45: istore 4
+46: aload 0
+47: iload 4
+48: iaload 1
+49: istore 6
+50: aload 0
+51: iload 4
+52: aload 0
+53: iload 5
+54: iaload 1
+55: iastore 1
+56: aload 0
+57: iload 5
+58: iload 6
+59: iastore 1
+60: iload 5
+61: iconst 1
+62: iadd
+63: istore 5
+64: goto 32
+65: aload 0
+66: iload 4
+67: iconst 1
+68: iadd
+69: iaload 1
+70: istore 6
+71: aload 0
+72: iload 4
+73: iconst 1
+74: iadd
+75: aload 0
+76: iload 2
+77: iaload 1
+78: iastore 1
+79: aload 0
+80: iload 2
+81: iload 6
+82: iastore 1
+83: iload 4
+84: iconst 1
+85: iadd
+86: ireturn
+87: iconst 0
+88: istore 2
+89: iload 2
+90: iload 1
+91: icmpge 102
+92: aload 0
+93: iload 2
+94: iaload 1
+95: istore 3
+96: print 3
+97: iload 2
+98: iconst 1
+99: iadd
+100: istore 2
+101: goto 89
+102: return
+103: iconst 10
+104: newIntArray 1
+105: astore 0
+106: aload 0
+107: iconst 0
+108: iconst 8
+109: iastore 1
+110: aload 0
+111: iconst 1
+112: iconst 3
+113: iastore 1
+114: aload 0
+115: iconst 2
+116: iconst 5
+117: iastore 1
+118: aload 0
+119: iconst 3
+120: iconst 1
+121: iastore 1
+122: aload 0
+123: iconst 4
+124: iconst 9
+125: iastore 1
+126: aload 0
+127: iconst 5
+128: iconst 7
+129: iastore 1
+130: aload 0
+131: iconst 6
+132: iconst 4
+133: iastore 1
+134: aload 0
+135: iconst 7
+136: iconst 6
+137: iastore 1
+138: aload 0
+139: iconst 8
+140: iconst 2
+141: iastore 1
+142: aload 0
+143: iconst 9
+144: iconst 10
+145: iastore 1
+146: aload 0
+147: iconst 0
+148: iconst 9
+149: invoke 1, 3, 4
+150: aload 0
+151: iconst 10
+152: invoke 87, 2, 4
+153: return
+154: invoke 103, 0, 1
